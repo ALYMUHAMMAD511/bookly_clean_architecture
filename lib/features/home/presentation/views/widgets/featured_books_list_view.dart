@@ -32,7 +32,7 @@ class FeaturedBooksListView extends StatelessWidget {
               ),
               onTap: () {
                 GoRouter.of(context).push(AppRouter.kBookDetailsView,
-                  extra: books,
+                  extra: books[index],
                 );
               },
             ),

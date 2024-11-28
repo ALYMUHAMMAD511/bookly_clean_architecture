@@ -32,7 +32,7 @@ class BookModel extends BookEntity {
     rating: volumeInfo.averageRating ?? 0,
     ratingCount: volumeInfo.ratingsCount ?? 0,
     bookId: id!,
-    previewLink: volumeInfo.previewLink,
+    previewLink: volumeInfo.previewLink ?? 'No Link',
     category: volumeInfo.categories?[0] ?? 'Not Categorized'
   );
 

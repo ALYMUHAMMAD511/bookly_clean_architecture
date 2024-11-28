@@ -12,9 +12,9 @@ import 'features/home/data/repos/home_repo_implementation.dart';
 import 'features/home/domain/use_cases/fetch_newest_books_use_case.dart';
 import 'features/home/presentation/manager/cubits/newest_books_cubit/newest_books_cubit.dart';
 
-void main() {
+void main() async {
 
-  setupHiveInitialization();
+  await setupHiveInitialization();
   setupServiceLocator();
   Bloc.observer = SimpleBlocObserver();
 

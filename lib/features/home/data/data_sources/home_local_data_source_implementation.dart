@@ -6,7 +6,7 @@ import 'package:hive_flutter/hive_flutter.dart';
 class HomeLocalDataSourceImplementation extends HomeLocalDataSource
 {
   @override
-  List<BookEntity> fetchFeaturedBooks() {
+  List<BookEntity> fetchFeaturedBooks()  {
     var box = Hive.box<BookEntity>(kFeaturedBox);
     return box.values.toList();
   }

@@ -4,9 +4,7 @@ import 'package:bookly_ebook_app/features/home/domain/entities/book_entity.dart'
 import 'package:bookly_ebook_app/features/home/presentation/views/widgets/book_rating.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:shimmer/shimmer.dart';
-import '../../../../../core/utils/app_router.dart';
 
 class BooksListViewItem extends StatelessWidget {
   const BooksListViewItem({super.key, required this.image, required this.books});
@@ -18,14 +16,7 @@ class BooksListViewItem extends StatelessWidget {
   Widget build(BuildContext context) {
     double h = MediaQuery.of(context).size.height;
     double w = MediaQuery.of(context).size.width;
-    return GestureDetector(
-      onTap: () {
-        GoRouter.of(context).push(
-          AppRouter.kBookDetailsView,
-          extra: books,
-        );
-      },
-      child: SizedBox(
+    return SizedBox(
         height: MediaQuery.of(context).size.height * 0.155,
         child: Row(
           children: [
@@ -111,7 +102,6 @@ class BooksListViewItem extends StatelessWidget {
             ),
           ],
         ),
-      ),
     );
   }
 }
