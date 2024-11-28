@@ -6,5 +6,3 @@ const kGTSectraFine = 'GT Sectra Fine';
 const kGilroy = 'Gilroy';
 const kFeaturedBox = 'featured_box';
 const kNewestBox = 'newest_box';
-const kSimilarBox = 'similar_box';
-const kSearchBox = 'search_box';

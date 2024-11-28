@@ -2,8 +2,6 @@ import 'package:bookly_ebook_app/core/utils/api_service.dart';
 import 'package:bookly_ebook_app/features/home/domain/entities/book_entity.dart';
 import 'package:bookly_ebook_app/features/search/data/data_sources/search_remote_data_source.dart';
 
-import '../../../../constants.dart';
-import '../../../../core/utils/functions/cache_books_data.dart';
 import '../../../home/data/models/book_model/book_model.dart';
 
 class SearchRemoteDataSourceImplementation extends SearchRemoteDataSource
@@ -19,7 +17,6 @@ class SearchRemoteDataSourceImplementation extends SearchRemoteDataSource
     );
 
     List<BookEntity> books = getBooksList(data);
-    cacheBooksData(books, kSearchBox);
     return books;
   }
 

@@ -17,9 +17,4 @@ class HomeLocalDataSourceImplementation extends HomeLocalDataSource
     return box.values.toList();
   }
 
-  @override
-  List<BookEntity> fetchSimilarBooks({required String category}) {
-    var box = Hive.box<BookEntity>(kSimilarBox);
-    return box.values.toList();
-  }
 }

@@ -39,7 +39,6 @@ class HomeRemoteDataSourceImplementation extends HomeRemoteDataSource {
     );
 
     List<BookEntity> books = getBooksList(data);
-    cacheBooksData(books, kSimilarBox);
     return books;
   }
 

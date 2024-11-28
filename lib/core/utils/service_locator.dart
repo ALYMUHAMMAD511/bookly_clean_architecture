@@ -1,7 +1,6 @@
 import 'package:bookly_ebook_app/core/utils/api_service.dart';
 import 'package:bookly_ebook_app/features/home/data/data_sources/home_local_data_source_implementation.dart';
 import 'package:bookly_ebook_app/features/home/data/data_sources/home_remote_data_source_implementation.dart';
-import 'package:bookly_ebook_app/features/search/data/data_sources/search_local_data_source_implementation.dart';
 import 'package:bookly_ebook_app/features/search/data/data_sources/search_remote_data_source_implementation.dart';
 import 'package:dio/dio.dart';
 import 'package:get_it/get_it.dart';
@@ -31,7 +30,6 @@ void setupServiceLocator() {
         searchRemoteDataSource: SearchRemoteDataSourceImplementation(
           getIt.get<ApiService>(),
         ),
-        searchLocalDataSource: SearchLocalDataSourceImplementation()
     ),
   );
 }
