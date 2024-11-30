@@ -10,6 +10,8 @@ final class NewestBooksInitialState extends NewestBooksState {}
 
 final class NewestBooksLoadingState extends NewestBooksState {}
 
+final class NewestBooksPaginationLoadingState extends NewestBooksState {}
+
 final class NewestBooksSuccessState extends NewestBooksState
 {
   final List<BookEntity> books;
@@ -23,3 +25,11 @@ final class NewestBooksFailureState extends NewestBooksState
 
   const NewestBooksFailureState(this.error);
 }
+
+final class NewestBooksPaginationFailureState extends NewestBooksState
+{
+  final String error;
+
+  const NewestBooksPaginationFailureState(this.error);
+}
+

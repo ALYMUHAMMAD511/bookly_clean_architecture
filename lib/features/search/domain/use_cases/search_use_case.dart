@@ -1,5 +1,5 @@
 import 'package:bookly_ebook_app/core/errors/failures.dart';
-import 'package:bookly_ebook_app/core/utils/use_cases/use_case.dart';
+import 'package:bookly_ebook_app/core/utils/use_case.dart';
 import 'package:bookly_ebook_app/features/search/domain/repos/search_repo.dart';
 import 'package:dartz/dartz.dart';
 
