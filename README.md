@@ -1,16 +1,2 @@
-# bookly_clean_architecture
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![bookly 1](https://github.com/user-attachments/assets/0aea766c-8370-4d57-8898-32347d715113)
+![bookly 2](https://github.com/user-attachments/assets/e1095413-327a-4221-9219-7188a3924730)
